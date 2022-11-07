@@ -5,7 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Modern HTML Email Template</title>
+
 <style type="text/css">
+
+/* Main Styles */
 	body {
 		margin: 0;
 		background-color: #cccccc;
@@ -34,6 +37,8 @@
 		font-family: sans-serif;
 		color: #171a1b;
 	}
+
+	/* Header */
 	.two-columns{
 		text-align: center;
 		font-size: 0;
@@ -46,7 +51,9 @@
 		vertical-align: top;
 		text-align: center;
 	}
-	.three-columns{
+
+/* Services */
+.three-columns{
 		text-align: center;
 		font-size: 0;
 		padding: 15px 0 25px;
@@ -57,7 +64,7 @@
 		display: inline-block;
 		vertical-align: top;
 		text-align: center;
-		border: solid 1px red;
+		
 	}
 	.three-columns .padding{
 		padding: 15px;
@@ -66,7 +73,10 @@
 		font-size: 15px;
 		line-height: 20px;
 		padding: 0 5px;
+		
 	}
+
+/* About */
 	.two-columns.last{
 		padding: 15px 0;
 	}
@@ -86,10 +96,37 @@
 		border-radius: 5px;
 		font-weight: bold;
 	}
-	
+	.button:hover{
+		text-decoration: none;
+		color: #128f96;
+	}
+	.button-dark{
+		background-color: #171a1b;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	.button-dark:hover{
+		text-decoration: none;
+		color: #128f96;
+	}
+
+/* . */	
+.subscribe a{
+	text-decoration: none;
+	color: #fff;
+}
+.subscribe a:hover{
+	text-decoration: none;
+	color: #128f96;
+}
 
 </style>
 </head>
+
 <body>
 	<center class="wrapper">
 		<table class="main" width="100%">
@@ -97,10 +134,10 @@
 
 		<!-- TOP BORDER -->
 		<tr>
-			<td height="8" style="background-color: #171a1b;"></td>
+			<td height="30" style="background-color: #171a1b;"></td>
 		</tr>
 
-		<!-- LOGO SECTION -->
+		<!-- NAV SECTION -->
 		<tr>
 			<td style="padding: 14px 0 4px;">
 				<table width="100%">
@@ -108,7 +145,7 @@
 						<td class="two-columns">
 							<table class="column">
 								<tr>
-									<!-- Logo img -->
+		<!-- LOGO IMG LEFT -->
 									<td style="padding: 0 62px 10px;">
 										<a href="https://bettameta.com"><img
 										src="img/modern.jpg" alt="Modern Logo" width="180"></a>
@@ -118,8 +155,10 @@
 							<table class="column">
 								<tr>
 									<td style="padding: 10px 72px;"> 
-										<!-- Social Media Links -->
-										<a href="https://www.facebook.com/" target="_blank"><img src="img/black-facebook.png" width="30px"
+		<!-- SOCIAL MEDIA ICONS RIGHT -->
+										<a href="https://www.facebook.com/"
+										target="_blank"><img src="img/black-facebook.png"
+										width="30px"
 										alt="Facebook icon"></a>
 										<a href="https://www.twitter.com/" target="_blank"><img src="img/black-twitter.png" width="30px"
 											alt="Twitter icon"></a>
@@ -138,7 +177,7 @@
 			</td>
 		</tr>
 
-		<!-- BANNER IMAGE -->
+		<!-- HERO IMG -->
 		<tr>
 			<td>
 				<a href="#"><img src="img/banner.jpg" width="600" style="max-width:
@@ -152,71 +191,81 @@
 				<table width="100%">
 					<tr>
 						<td class="three-columns">
+<!--Table 1-->						
 							<table class="column">
 								<tr>
 									<td class="padding">
-
 										<table class="content">
 											<tr>
 												<td>
 													<a href="#"><img src="img/email.png"
-													width="130" style="max-width: 130px;"></a>
+													alt="" width="130"
+													style="max-width: 130px"></a>
 												</td>
 											</tr>
 											<tr>
 												<td>
 													<p style="font-weight: bold; font-size:
-													17px;">Ecommerce</p>
-													<p>Responsive HTML Email Template
-													Course to master email development
-												</p>
+													17px">Ecommerce</p>
+													<p>Responsive HTML Email Template Course
+													to master email development.</p>
 												</td>
 											</tr>
 										</table>
-
+									</td>
+								</tr>
+							</table>
+<!--Table 2-->
+							<table class="column">
+								<tr>
+									<td class="padding">
 										<table class="content">
 											<tr>
 												<td>
 													<a href="#"><img src="img/settings.png"
-													width="130" style="max-width: 130px;"></a>
+													alt="" width="130"
+													style="max-width: 130px"></a>
 												</td>
 											</tr>
 											<tr>
 												<td>
 													<p style="font-weight: bold; font-size:
-													17px;">Web Design</p>
-													<p>Responsive HTML Email Template
-													Course to master email development
-												</p>
+													17px">Web Design</p>
+													<p>Responsive HTML Email Template Course
+													to master email development.</p>
 												</td>
 											</tr>
 										</table>
-
+									</td>
+								</tr>
+							</table>
+<!--Table 3-->
+							<table class="column">
+								<tr>
+									<td class="padding">
 										<table class="content">
 											<tr>
 												<td>
 													<a href="#"><img src="img/home.png"
-													width="130" style="max-width: 130px;"></a>
+													alt="" width="130"
+													style="max-width: 130px"></a>
 												</td>
 											</tr>
 											<tr>
 												<td>
 													<p style="font-weight: bold; font-size:
-													17px;">HTML Email</p>
-													<p>Responsive HTML Email Template
-													Course to master email development
-												</p>
+													17px">HTML Email</p>
+													<p>Responsive HTML Email Template Course
+													to master email development.</p>
 												</td>
 											</tr>
 										</table>
-
 									</td>
 								</tr>
 							</table>
 
 						</td>
 					</tr>
-
 				</table>
 			</td>
 		</tr>
@@ -272,18 +321,19 @@
 
 		<!-- TITLE, TEXT & BUTTON -->
 		<tr>
-			<td>
+			<td style="padding: 15px 0 60px;">
 				<table width="100%">
 					<tr>
-						<td>
-							<p style="font-weight: bold; font-size: 18px; padding: 18px 0;">HTML Email Template Course</p>
-							<p style="font-size: 16px; padding: 0 25px 15px;">Praesent sapien massa, convallis a pellentesque nec,
+						<td style="text-align: center; padding: 15px;">
+							<p style="font-weight: bold; font-size: 20px;">HTML Email Template Course</p>
+							<p style="font-size: 15px; line-height: 23px; padding: 5px 0px 15px;"
+							>Praesent sapien massa, convallis a pellentesque nec,
 							egestas non nisi. Pellentesque in ipsum id orci porta
 							dapibus. Vivamus magna justo, lacinia eget consectetur sed,
 							convallis at tellus. Vivamus suscipit tortor eget felis
 							porttitor volutpat.
 							</p>
-							<a href="#" class="button">View Course</a>
+							<a href="#" class="button-dark">View Course</a>
 						</td>
 					</tr>
 				</table>
@@ -291,7 +341,31 @@
 		</tr>
 
 		<!-- FOOTER SECTION -->
-
+		<tr>
+			<td style="background-color: #26292b; color: #fff; text-align: center; padding: 45px 20px;">
+				<table width="100%">
+					<td style=>
+						<tr>
+							<a href="#"><img src="img/modern-white.png" alt=""
+							width="180"></a>
+							<p  style="padding: 10px;">Modern HTML Email</p>
+							<p style="padding: 10px;">123 Street City, State 90000</p>
+							<a href="https://www.facebook.com/" target="_blank"><img src="img/white-facebook.png" width="30px"
+								alt="Facebook icon"></a>
+								<a href="https://www.twitter.com/" target="_blank"><img src="img/white-twitter.png" width="30px"
+									alt="Twitter icon"></a>
+								<a href="https://www.youtube.com/" target="_blank"><img src="img/white-youtube.png" width="30px"
+									alt="YouTube icon"></a>
+								<a href="https://www.linkedin.com/" target="_blank"><img src="img/white-linkedin.png" width="30px"
+									alt="LinkedIn icon"></a>
+								<a href="https://www.instagram.com/" target="_blank"><img src="img/white-instagram.png" width="30px"
+									alt="Instagram icon"></a>
+								<p class="subscribe" style="padding: 30px 0;"><a href="#">SUBSCRIBE</a></p>
+						</tr>
+					</td>
+				</table>
+			</td>
+		</tr>
 		</table>
 	</center>
 </body>
@@ -317,3 +391,5 @@
 		$("#socialModal").modal('show');
 	});
 </script>
+
+
